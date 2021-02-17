@@ -1,6 +1,7 @@
 let progress = document.getElementById('progress');
 let prev = document.getElementById('prev');
 let next = document.getElementById('next');
+let startOver = document.getElementById('startOver');
 let circles = document.querySelectorAll('.circle');
 
 let currentActive;
@@ -29,6 +30,14 @@ prev.addEventListener('click', () => {
     if(currentActive < 1) {
         currentActive = 1
     }
+
+    update()
+});
+
+startOver.addEventListener('click', () => {
+    currentActive = 1;
+
+    next.disabled = false;
 
     update()
 });
