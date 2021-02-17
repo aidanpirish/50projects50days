@@ -3,6 +3,14 @@ const prev = document.getElementById('prev');
 const next = document.getElementById('next');
 const circles = document.querySelectorAll('.circle');
 
+if (typeof(Storage) !== "undefined") {
+    console.log("Web storage found");
+
+} else {
+    console.log("Web storage unavailable");
+    let currentActive = 1;
+}
+
 let currentActive = 1;
 
 next.addEventListener('click', () => {
@@ -46,4 +54,18 @@ function update() {
         prev.disabled = false;
         next.disabled = false;
     }
+}
+
+function updateStorage() {
+    localStorage.setItem("progress", document.getElementById('progress'));
+    localStorage.setItem("prev", document.getElementById('prev'));
+    localStorage.setItem("next", document.getElementById('next'));
+    localStorage.setItem("circles", document.querySelectorAll('.circle'));
+    localStorage.setItem("currentActive", currentActive);
+}
+
+function loadStorage() {
+    progress = localStorage.getItem("progress");
+    prev = localStorage.getItem("prev");
+
 }
