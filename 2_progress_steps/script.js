@@ -55,10 +55,15 @@ function update() {
 
     progress.style.width = (actives.length - 1) / (circles.length - 1) * 100 + '%'
 
-    if(currentActive === 1) {
-        prev.disabled = true
-    } else if (currentActive === circles.length) {
+    console.log(currentActive, circles.length);
+
+    if(currentActive == 1) {
+        prev.disabled = true;
+        next.disabled = false;
+    } else if (currentActive == circles.length) {
+        console.log("Hello")
         next.disabled = true;
+        prev.disabled = false;
     } else {
         prev.disabled = false;
         next.disabled = false;
