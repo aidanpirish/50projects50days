@@ -6,21 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
     <title>Progress Steps</title>
 </head>
 <body>
     <div class="container">
         <div class="progress-container">
             <div class="progress" id="progress"></div>
-            <div class="circle active">1</div>
-            <div class="circle">2</div>
-            <div class="circle">3</div>
-            <div class="circle">4</div>
+            <div class="circle active"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
             
         </div>
         <button class="btn" id="prev" disabled>Prev</button>
         <button class="btn" id="next">Next</button>
-        <i class="fas fa-sync-alt btn" id="startOver"></i>
+        <button class="fas fa-long-arrow-alt-left btn" id="back"></button>
+
+        <form id="options-container">
+            <input type="radio" id="numeric" name="label-type" value="numeric">
+            <label for="numeric">123</label><br>
+            <input type="radio" id="alpha" name="label-type" value="alpha">
+            <label for="alpha">ABC</label><br>
+        </form>
+
+
+        
     </div>
     
     <script src="script.js"></script>

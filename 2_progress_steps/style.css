@@ -87,6 +87,7 @@ body {
     padding: 8px 30px;
     margin: 5px;
     font-size: 14px;
+    height: 35px;
 }
 
 .btn:active{
@@ -100,4 +101,14 @@ body {
 .btn:disabled{
     background-color: var(--line-border-empty);
     cursor: not-allowed;
+}
+
+#options-container {
+    display: flex;
+    
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;;
+
+    align-items: center;
 }
