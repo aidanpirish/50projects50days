@@ -4,7 +4,6 @@ const input = document.querySelector('.input');
 
 let isSearch = false;
 
-
 btn.addEventListener('click', () => {
     if(isSearch) {
         searchWiki();
@@ -19,8 +18,6 @@ function handle(event) {
     }
 }
 
-
-
 function openSearch() {
     search.classList.add('active');
     isSearch = true;
@@ -34,6 +31,3 @@ function searchWiki() {
         window.location.href = data[3][0];
     })
 }
-
-
-
