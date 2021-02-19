@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <title>My Project</title>
+    <title>Hidden Search</title>
 </head>
 <body>
-    <h1>Project Starter</h1>
+    <div class="search" id="search">
+        <input class="input" type="text" placeholder="Search..." onkeypress="handle(event)">
+        <button class="btn" id="btn">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
     
     <script src="script.js"></script>
 </body>
