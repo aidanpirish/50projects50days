@@ -19,6 +19,10 @@ h1 {
     margin: 10px;
 }
 
+.boxes {
+    margin-bottom: 50px;
+}
+
 .box {
     background-color: steelblue;
     color: #fff;
