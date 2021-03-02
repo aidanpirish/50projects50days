@@ -39,6 +39,10 @@ body {
      max-width: 600px;
  }
 
+ .answer {
+     color: red;
+ }
+
  .btn {
      background-color: #9F68E0;
      color: #fff;
